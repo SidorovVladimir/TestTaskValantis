@@ -1,3 +1,5 @@
-const removeDuplicates = (items) => [...new Set(items)];
+export const removeDuplicatesIds = (Ids) => [...new Set(Ids)];
 
-export default removeDuplicates;
+export const removeDuplicatesItems = (items) => items
+  .filter((item, index) => items
+    .findIndex((i) => i.id === item.id) === index);
