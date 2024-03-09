@@ -16,7 +16,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchIds = async () => {
       try {
-        const { data } = await api.post('', getIds());
+        const { data } = await getIds();
         const uniqIds = removeDuplicatesIds(data.result);
         setPageCount(Math.ceil(uniqIds.length / pageSize));
       } catch (err) {
@@ -30,7 +30,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const { data } = await api.post('', getIds(pageSize * currentPage, pageSize * 2));
+        const { data } = await getIds(pageSize * currentPage, pageSize + 10);
         const uniqIds = removeDuplicatesIds(data.result);
 
         const product = await api.post('', {

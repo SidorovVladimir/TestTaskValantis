@@ -5,5 +5,17 @@
 
 .page-item {
   list-style: none;
+  cursor: pointer;
+}
+.page-item:hover {
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
+.active {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: blue;
+  opacity: 70%;
+  color: #ffffff;
+}

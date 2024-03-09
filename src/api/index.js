@@ -3,7 +3,7 @@
 import axios from 'axios';
 import md5 from 'md5';
 
-const baseUrl = 'https://api.valantis.store:41000';
+const baseUrl = 'https://api.valantis.store:41000/';
 const password = 'Valantis';
 
 const currentDate = new Date();
