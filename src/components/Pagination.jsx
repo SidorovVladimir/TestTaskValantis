@@ -2,10 +2,11 @@ import React from 'react';
 import ReactPaginate from 'react-paginate';
 import './Pagination.css';
 
-const Pagination = ({ handlePageClick, pageCount }) => (
+const Pagination = ({ handlePageClick, pageCount, currentPage }) => (
   <ReactPaginate
     nextLabel="Следующая >"
     onPageChange={handlePageClick}
+    forcePage={currentPage}
     pageRangeDisplayed={5}
     marginPagesDisplayed={2}
     pageCount={pageCount}

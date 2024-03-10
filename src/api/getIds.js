@@ -1,4 +1,4 @@
-import api from '../api/index.js';
+import api from './index.js';
 
 const getIds = (offset = 0, limit = Infinity) => api.post(
   '',

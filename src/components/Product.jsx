@@ -6,7 +6,7 @@ const Product = ({ product }) => (
     <div className="product-card__brand">
       Бренд:
       {' '}
-      {product.brand || 'Неизвестен'}
+      {product.brand || 'Не указан'}
     </div>
     <h3 className="product-card__title">{product.product}</h3>
     <span className="product-card__price">

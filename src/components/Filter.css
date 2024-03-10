@@ -1,0 +1,13 @@
+.filter-component {
+  margin-bottom: 50px
+}
+
+.button {
+  background: linear-gradient(30deg, red 30%, blue 100%);
+  color: #fff;
+}
+.form > * {
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
