@@ -2,7 +2,7 @@ import React from 'react';
 import './Product.css';
 
 const Product = ({ product }) => (
-  <div className="product-card">
+  <div className="product">
     <div className="product-card__brand">
       Бренд:
       {' '}
