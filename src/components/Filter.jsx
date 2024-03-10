@@ -12,7 +12,7 @@ const Filter = ({ setFilter, setCurrentPage }) => {
   };
 
   return (
-    <div className="filter">
+    <div className="filter-component">
       <form className="form" action="#" onSubmit={handleSubmit}>
         <select name="category">
           <option value="noFilter">Без фильтра</option>
